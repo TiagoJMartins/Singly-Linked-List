@@ -2,7 +2,7 @@
 
 This is a simple proof of concept for practicing.
 This is how it can be used:
-```
+```javascript
 // We create a Linked List.
 var list = new LinkedList();
 
