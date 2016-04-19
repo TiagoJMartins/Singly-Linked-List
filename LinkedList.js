@@ -63,7 +63,7 @@ LinkedList.prototype.remove = function(val) {
   var prevNode = this.head;
 
   while (currNode !== null) {
-    if (val === currNode.data) {
+    if (val == currNode.data) {
 
       // If the node to be removed is the head
       if (currNode === this.head) {
@@ -71,6 +71,9 @@ LinkedList.prototype.remove = function(val) {
         this._length--;
         return;
       }
+
+      // If the node to be removed is the tail TODO
+      // if (currNode.next === null) {}
 
       // If the node to be removed is not the first node
       prevNode.next = currNode.next;
