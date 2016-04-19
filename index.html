@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Singly-Linked List</title>
+  <style media="screen">
+    h1 {
+      text-align: center;
+    }
+
+    #list {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    li {
+      display: inline;
+      padding-right: 45px;
+    }
+
+    input {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+    This implementation of Linked Lists has two properties: <strong>head</strong> and <strong>_length</strong>. You can use the below interface to experiment with it.
+  </p>
+  <p>
+    This code is running on your browser, which means changes are not permanent, if you refresh the page all data will be lost.
+  </p>
+  <div id="content">
+    <h1>Current List</h1>
+    <p id="list">
+
+    </p>
+    <div id="actions">
+      <form action="index.html">
+        <input type="text" name="data" id="data" value="11">
+        <ul>
+          <li>
+            <button type="button" name="addNode" id="addNode">Add Node</button>
+          </li>
+          <li>
+            <button type="button" name="removeNode" id="removeNode">Remove Node</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+  <script src="LinkedList.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
