@@ -72,9 +72,6 @@ LinkedList.prototype.remove = function(val) {
         return;
       }
 
-      // If the node to be removed is the tail TODO
-      // if (currNode.next === null) {}
-
       // If the node to be removed is not the first node
       prevNode.next = currNode.next;
       this._length--;
@@ -97,11 +94,11 @@ LinkedList.prototype.print = function() {
   var currNode = this.head;
   var output = '[';
 
-  while(currNode.next) {
-    output += currNode.data + ', ';
+  while (currNode !== null) {
+    output += currNode.data + ((currNode.next) ? ', ' : ']');
     currNode = currNode.next;
   }
 
-  output += currNode.data + ']';
+  if (output[output.length - 1] !== ']') output += ']';
   return output;
 }

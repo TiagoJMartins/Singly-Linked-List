@@ -36,7 +36,21 @@
     This implementation of Linked Lists has two properties: <strong>head</strong> and <strong>_length</strong>. You can use the below interface to experiment with it.
   </p>
   <p>
-    This code is running on your browser, which means changes are not permanent, if you refresh the page all data will be lost.
+    This code is running in your browser, which means changes are not permanent, if you refresh the page all data will be lost.
+  </p>
+  <p>
+    The left node always points to the right node. The first node is the head, the last node is the tail.
+    The tail node always points to null.
+  </p>
+  <p>
+    The Linked List can be seen below in the same syntax as an array.
+  </p>
+  <p>
+    You can use the input field below to choose a value to add or remove to the Linked List by clicking the respective button.
+  </p>
+  <p>
+    If nothing is happening when you're pressing the buttons, you either have Javascript disabled or you're getting an error thrown by the script.
+    <br>In that case you should open your Javascript console and check the error, they are intended.
   </p>
   <div id="content">
     <h1>Current List</h1>
@@ -45,7 +59,7 @@
     </p>
     <div id="actions">
       <form action="index.html">
-        <input type="text" name="data" id="data" value="11">
+        <input type="text" name="data" id="data" value="">
         <ul>
           <li>
             <button type="button" name="addNode" id="addNode">Add Node</button>
